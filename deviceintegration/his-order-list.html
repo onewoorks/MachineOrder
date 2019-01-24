@@ -232,6 +232,9 @@
                                 <td class="text-center">{{coe.order_option}}</td>
                                 <td class="text-center">
                                     <div ng-if="coe.status == 'COMPLETED' && coe.report_type != 'null'">
+                                         <div ng-if="coe.report_type == 'image/jpg'">
+                                            <i class="fas fa-file-image fa-lg" ng-click='openReport(coe)'  style='cursor: pointer'></i>
+                                        </div>
                                         <div ng-if="coe.report_type == 'image/jpeg'">
                                             <i class="fas fa-file-image fa-lg" ng-click='openReport(coe)'  style='cursor: pointer'></i>
                                         </div>
